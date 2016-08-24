@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../images/login_images/bg1.jpg") no-repeat;
+    background-size: cover;
+}
+
+/*********************************首页head**********************************/
+.login-head {
+    width: 100%;
+    height: 70px;
+    background: #48AAB9;
+}
+
+.wareName {
+    display: block;
+    width: 250px;
+    height: 70px;
+    background: url("../images/login_images/warename.png");
+    margin-left: 20px;
+    float: left;
+}
+
+.login-head .login-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    float: left;
+}
+
+/*********************************登录注册界面**********************************/
+.login-content {
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin: 90px 180px 0 0;
+    border-radius: 5px;
+}
+
+.login-content .user-login-list {
+    width: 100%;
+    height: 45px;
+    background: #B7D1D6;
+    border-radius: 5px;
+}
+
+.login-content .user-login-list li {
+    list-style-type: none;
+    width:50%;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    color: #7C7C7C;
+}
+
+.login-content .user-login-list .user-login {
+    background: #F3F7F8;
+}
+
+.login-content .user-login-ul {
+    width: 100%;
+    height: 355px;
+    background: url("../images/login_images/login_bg.jpg");
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.login-content .user-login-ul li {
+    width: 100%;
+    height: 355px;
+    display: none;
+
+}
+
+.login-content .user-login-ul .user-login-li {
+    display: block;
+}
+
+/*********************************用户登录**********************************/
+#user-login-li span {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 35px auto;
+}
+
+#user-login-li .remeber_password {
+    width: 80%;
+    height: 30px;
+    margin: -25px auto;
+}
+
+#user-login-li .remeber_password .remeber_password_span {
+    height: 30px;
+    margin: 0 25px 0 0;
+    line-height: 30px;
+    font-size: 15px;
+    width: 150px;
+    float: right;
+    text-align: right;
+}
+
+#user-login-li .remeber_password .remeber_password_span input {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+#user-login-li span img {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#user-login-li span input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    margin: 9px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#user-login-li .login_btn_span {
+    margin-top: 50px;
+}
+
+.login_btn {
+    width: 230px;
+    height: 35px;
+    margin: 20px 0 0 24px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-family: 幼圆;
+    background: #B7D1D6;
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    background: #6FA0AA;
+    color: #fff;
+}
+/*******************************切换不同用户登录页面按钮**************************/
+.switch{
+    float: right;
+    margin-right: 70px;
+    margin-top: -30px;
+}
+.mui-switch {
+    width: 70px;
+    height: 29px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    background:url("/images/login_images/user.jpg");
+    background-size: cover;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 20px;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+    cursor:pointer;
+}
+.mui-switch:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+.mui-switch:checked {
+    border-color: #fff;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #fff; }
+.mui-switch:checked:before {
+    left: 42px; }
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-animbg:checked {
+    box-shadow: #000 0 0 0 0 inset;
+    background:url("/images/login_images/doctor.jpg");
+    background-size: cover;
+    transition: border-color 0.4s, background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:checked:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-anim {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s; }
+.mui-switch.mui-switch-anim:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-anim:checked {
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s; }
+.mui-switch.mui-switch-anim:checked:before {
+    transition: left 0.3s;
+}
+/*********************************用户注册**********************************/
+.user-login-ul #user-logup-li span {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 15px auto;
+}
+
+.user-login-ul #user-logup-li span input {
+    float: left;
+    width: 190px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.user-login-ul #user-logup-li span img {
+    width: 31px;
+    height: 32px;
+    margin-top: 8px;
+    border: 1px solid #A9A9A9;
+    float: left;
+}
+
+.user-login-ul #user-logup-li span .match_result {
+    width: 26px;
+    height: 26px;
+    border: 0 solid #000;
+    margin: 12px 0 0 10px;
+}
+
+.user-login-ul #user-logup-li span .register_btn {
+    width: 230px;
+    height: 35px;
+    font-size: 16px;
+    font-family: 幼圆;
+    margin-left: 20px;
+    cursor: pointer;
+    background: #B7D1D6;
+    outline: none;
+    border-radius: 5px;
+}
+
+.user-login-ul #user-logup-li span .register_btn:hover {
+    background: #6FA0AA;
+    color: #fff;
+
+}
